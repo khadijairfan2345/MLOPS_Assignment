@@ -1,9 +1,9 @@
+# tests/test.py
 import unittest
 from train import train_model
 from joblib import load
 
 class TestModel(unittest.TestCase):
-
 
     def test_train_model(self):
         train_model()
@@ -12,7 +12,6 @@ class TestModel(unittest.TestCase):
                        2.68, 0.47, 1.92, 3.58, 1.13, 3.2, 830]
         prediction = clf.predict([sample_data])
         self.assertIn(prediction[0], [0, 1, 2])  # Since wine dataset has 3 classes
-
 
 if __name__ == "__main__":
     unittest.main()
