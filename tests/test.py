@@ -4,7 +4,7 @@ from joblib import load
 
 class TestModel(unittest.TestCase):
 
-    
+
     def test_train_model(self):
         train_model()
         clf = load("model.pkl")
