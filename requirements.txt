@@ -1,5 +1,4 @@
 torch
-torchvision
 pytest
 flake8
 pandas
